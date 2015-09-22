@@ -1,9 +1,6 @@
 function lib(React) {
-  var common = require('./lib/common')(React),
-      form = require('./lib/form')(React, common);
+  var common = require('./lib/common')(React);
   return {
-    form: form,
-    input: require('./lib/input')(React, form, common),
     layout: require('./lib/layout')(React, common)
   };
 }
